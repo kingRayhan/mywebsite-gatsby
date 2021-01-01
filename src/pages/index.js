@@ -5,14 +5,27 @@ import AboutMe from "../components/AboutMe";
 import InstaGallery from "../components/InstaGallery";
 import Head from "../components/head";
 
-const Home = () => (
-  <div>
-    <Head title="I'm Rayhan | Fullstack web developer" />
-    <VMenu />
-    <Hero />
-    <AboutMe />
-    <InstaGallery />
-  </div>
-);
+const Home = ({ data: instagramData }) => {
+  return (
+    <div>
+      <Head title="I'm Rayhan | Fullstack web developer" />
+      <VMenu />
+      <Hero />
+      <AboutMe />
+      <InstaGallery data={instagramData} />
+    </div>
+  );
+};
+
+export const query = graphql`
+  query allInstaNode {
+    allInstaNode {
+      nodes {
+        id
+        original
+      }
+    }
+  }
+`;
 
 export default Home;
