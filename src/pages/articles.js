@@ -6,7 +6,7 @@ import VMenu from '../components/VMenu'
 import Head from '../components/head'
 import ArticleCard from '../components/ArticleCard'
 
-const articles = () => {
+const Articles = () => {
     let res = useStaticQuery(graphql`
         query {
             allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
@@ -51,4 +51,4 @@ const articles = () => {
     )
 }
 
-export default articles
+export default Articles

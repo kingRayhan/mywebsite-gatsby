@@ -25,8 +25,8 @@ function VMenu() {
                     Facebook
                 </a>
 
-                <span className="line" />
-                <Link to="/articles">Articles</Link>
+                {/* <span className="line" />
+                <Link to="/articles">Articles</Link> */}
             </nav>
         </div>
     )

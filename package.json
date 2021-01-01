@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "start": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
+        "start": "gatsby develop",
         "build": "gatsby build"
     },
     "keywords": [],
@@ -12,6 +12,7 @@
     "dependencies": {
         "babel-plugin-styled-components": "^1.10.6",
         "bootstrap": "^4.3.1",
+        "cross-env": "^7.0.3",
         "gatsby": "^2.13.57",
         "gatsby-plugin-offline": "^2.2.5",
         "gatsby-plugin-react-helmet": "^3.1.3",
